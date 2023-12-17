@@ -26,8 +26,10 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery");
-const renderGallery = ({ url, alt }) =>
-  `<li><img src="${url}" alt="${alt}" width = "300" height = "auto"></li>`;
-
-const galleryMarkup = images.map(renderGallery).join("");
-gallery.insertAdjacentHTML("beforeend", galleryMarkup);
+const galleryMarcup = images
+  .map(
+    ({ url, alt }) =>
+      `<li class="picture"><img class="image" src="${url} alt="${alt}"></li>`
+  )
+  .join("");
+gallery.insertAdjacentHTML("afterbegin", galleryMarcup);
