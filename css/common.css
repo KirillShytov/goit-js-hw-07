@@ -65,3 +65,24 @@ body {
   width: 360px;
   height: 300px;
 }
+
+/*-------------------TASK-3----------------------------------- */
+
+/* -------------------TASK-4-------------------------------------- */
+
+/* -------------------TASK-5-------------------------------------- */
+
+.change-color {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 8px;
+}
+.change-color:hover {
+  background-color: #6c8cff;
+}
