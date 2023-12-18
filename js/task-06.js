@@ -18,7 +18,7 @@ function createBoxes(amount) {
     const size = 30 + 10 * i;
     const divBox = document.createElement("div");
     divBox.style.cssText = `width: ${size}px; height: ${size}px; background-color: ${getRandomHexColor()}`;
-    boxes.insertAdjacentElement("beforeend", divBox);
+    box.insertAdjacentElement("beforeend", divBox);
   }
   formInput.value = "";
 }
