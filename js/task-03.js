@@ -1,5 +1,7 @@
-const input = document.querySelector("#name-input");
+const formInput = document.querySelector("#name-input");
 const output = document.querySelector("#name-output");
-input.addEventListener("input", (event) => {
-  output.textContent = event.currentTarget.value;
+
+formInput.addEventListener("input", (event) => {
+  const trimValue = event.target.value.trim();
+  output.textContent = trimValue || "Anonymous";
 });

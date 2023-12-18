@@ -3,13 +3,17 @@ const btn = document.querySelector("button");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const email = e.target.email.value.trim();
+  const password = e.target.password.value.trim();
+
+  if (email === "" || password === "") {
+    alert("Потрібно заповнити всі поля форми");
+    return;
+  }
   const data = {
-    email: e.target.email.value,
-    password: e.target.password.value,
+    email: email,
+    password: password,
   };
   console.log(data);
-  if (e.target.email.value === "" || e.target.password.value === "") {
-    alert("All form fields must be filled in");
-  }
   form.reset();
 });

@@ -10,7 +10,7 @@ function getRandomHexColor() {
 }
 
 function destroyEl() {
-  boxes.textContent = "";
+  box.textContent = "";
 }
 
 function createBoxes(amount) {
@@ -24,7 +24,7 @@ function createBoxes(amount) {
 }
 
 btnCreate.addEventListener("click", () => {
-  if (1 <= formInput.value <= 100) {
+  if (formInput.value >= 1 && formInput.value <= 100) {
     createBoxes(formInput.value);
   }
 });
